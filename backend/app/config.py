@@ -56,6 +56,7 @@ MAX_SEARCH_RESULTS: int = int(os.getenv("MAX_SEARCH_RESULTS", "5"))
 # ---------------------------------------------------------------------------
 # File Uploads
 # ---------------------------------------------------------------------------
-UPLOAD_DIR: Path = _PROJECT_ROOT / "backend" / "uploads"
+BASE_DIR = Path(__file__).resolve().parent.parent
+UPLOAD_DIR: Path = Path(os.getenv("UPLOAD_DIR", str(BASE_DIR / "uploads")))
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 MAX_UPLOAD_SIZE_MB: int = 20
