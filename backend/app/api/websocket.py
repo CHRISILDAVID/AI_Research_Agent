@@ -6,7 +6,6 @@ updates, tool call notifications, and the final report as they happen.
 
 from __future__ import annotations
 
-import asyncio
 import json
 import logging
 from datetime import datetime
@@ -14,7 +13,6 @@ from datetime import datetime
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
 from app.agents.graph import run_research
-from app.models.schemas import SessionStatus
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

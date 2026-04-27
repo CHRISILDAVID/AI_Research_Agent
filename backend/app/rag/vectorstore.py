@@ -8,7 +8,6 @@ and are automatically created on first access.
 from __future__ import annotations
 
 import logging
-from typing import Any
 
 import chromadb
 from langchain_chroma import Chroma

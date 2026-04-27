@@ -68,7 +68,7 @@ jobs:
 
       - name: Run backend tests
         working-directory: backend
-        run: python -m pytest tests/ -v --tb=short || true
+        run: PYTHONPATH=. python -m pytest tests/ -v --tb=short || true
         env:
           GOOGLE_API_KEY: "test-key"
           TAVILY_API_KEY: "test-key"

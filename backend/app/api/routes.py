@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-import shutil
 from uuid import uuid4
 
 from fastapi import APIRouter, File, HTTPException, UploadFile
@@ -22,7 +21,7 @@ from app.models.schemas import (
     SessionStatus,
     SourceInfo,
 )
-from app.rag.vectorstore import delete_collection, list_collections
+from app.rag.vectorstore import delete_collection
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
