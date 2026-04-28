@@ -4,6 +4,10 @@ An **agentic AI system** that autonomously researches any topic by orchestrating
 
 > **Architecture**: Supervisor → Researcher → Writer multi-agent loop with autonomous tool-calling
 
+### 🔴 Live Demo
+- **Frontend (Vercel)**: [https://ai-research-agent-lime.vercel.app](https://ai-research-agent-lime.vercel.app)
+- **Backend (Render)**: [https://ai-research-agent-backend-7z8c.onrender.com](https://ai-research-agent-backend-7z8c.onrender.com)
+
 ---
 
 ## ✨ Features
